@@ -1,0 +1,35 @@
+.DS_Store
+
+# Built application files:
+*.apk
+*.ap_
+
+# Files for the dex VM:
+*.dex
+
+# Java class files:
+*.class
+
+# Generated files:
+bin/
+out/
+gen/
+
+# Build stuff:
+build.xml
+project.properties
+local.properties
+
+# Eclipse project files:
+.classpath
+.project
+
+# Idea project files:
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Gradle-based build:
+.gradle
+build/
