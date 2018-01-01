@@ -3,4 +3,8 @@
 
     <string name="action_search">Search</string>
     <string name="action_scan">Scan</string>
+    <string name="action_scan_barcode">Barcode</string>
+    <string name="action_scan_qr_code">QR Code</string>
+
+    <string name="msg_select_scanner">What do you want to scan?</string>
 </resources>

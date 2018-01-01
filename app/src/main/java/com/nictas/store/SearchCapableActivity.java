@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 
 public abstract class SearchCapableActivity extends AppCompatActivity {
@@ -32,4 +33,13 @@ public abstract class SearchCapableActivity extends AppCompatActivity {
         return searchManager.getSearchableInfo(searchActivityName);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.scan:
+                new SelectScannerFragment().show(getSupportFragmentManager(), SelectScannerFragment.class.getSimpleName());
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
